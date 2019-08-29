@@ -85,21 +85,24 @@ public class A1Jedi {
 			
 		}
 		
+		for(int y = 0; y < numberofitems; y++) {
+			if(quantityofitemsbought[y] == 0 ) {
+				System.out.println("No" + " " + "customers bought " + products[y]);
+			} else {
 		
-		System.out.println(quantityofpersons[0] + " " + "customers bought " + products[0]);
-		System.out.println(quantityofpersons[1] + " " + "customers bought " + quantityofitemsbought[1] + " " + products[1]);
-		System.out.println(quantityofpersons[2] + " " + "customers bought " + quantityofitemsbought[2] + " " + products[2]);
-		System.out.println(quantityofpersons[3] + " " + "customers bought " + quantityofitemsbought[3] + " " + products[3]);
-		System.out.println(quantityofpersons[4] + " " + "customers bought " + quantityofitemsbought[4] + " " + products[4]);
-		System.out.println(quantityofpersons[5] + " " + "customers bought " + quantityofitemsbought[5] + " " + products[5]);
-		scan.close();
+			System.out.println(quantityofpersons[y] + " " + "customers bought " + quantityofitemsbought[y] + " " + products[y]);
+			
+		}
+		}
+		
+		
+	scan.close();
+		
+	
+		
+	
+	
 	}
-		
-	
-		
-	
-	
-		
 		
 	}
 
