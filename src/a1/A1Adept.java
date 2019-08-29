@@ -109,7 +109,7 @@ public class A1Adept {
 					indexinwhichcurrentminexists = y;
 					
 				}
-				System.out.println("SMALLES IS CURRENTLY: " + cur_min);
+				
 		}
 		
 		System.out.println("Biggest: " + personfirstname[indexinwhichcurrentmaxexists] + " " + personlastname[indexinwhichcurrentmaxexists] + " " + "(" + String.format("%.02f", cur_max) + ")");
