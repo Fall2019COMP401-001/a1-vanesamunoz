@@ -98,6 +98,7 @@ public class A1Adept {
 		}
 		
 		for(int y = 0; y < thearraythateachcustomerspends.length; y++) {
+			
 			if(y == 0) {
 				cur_min = thearraythateachcustomerspends[0];
 			}
