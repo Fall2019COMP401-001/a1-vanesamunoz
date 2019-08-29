@@ -43,7 +43,6 @@ public class A1Adept {
 			
 			
 			int itemsbought = scan.nextInt();
-			
 			for(int c = 0; c < itemsbought; c++) {
 				int quantity = scan.nextInt();
 				
@@ -53,14 +52,15 @@ public class A1Adept {
 				for(int d = 0; d < products.length; d++) {
 					if(products[d].equals(productbeingbought)) {
 						total += quantity * price[d];
+						
 					}
 				}
 				
-				
+			
 				
 			}
 			
-			thearraythateachcustomerspends[a] = total;
+		 thearraythateachcustomerspends[a] = total;
 			
 			
 			
@@ -89,8 +89,8 @@ public class A1Adept {
 			}
 		}
 		
-		for(int y = 1; y < thearraythateachcustomerspends.length; y++) {
-			cur_min = thearraythateachcustomerspends[0];
+		for(int y = 0; y < thearraythateachcustomerspends.length; y++) {
+			cur_min = thearraythateachcustomerspends[1];
 				if (thearraythateachcustomerspends[y] < cur_min) {
 					cur_min = thearraythateachcustomerspends[y];
 					indexinwhichcurrentminexists = y;
@@ -98,8 +98,8 @@ public class A1Adept {
 				}
 		}
 		
-		System.out.println("Biggest: " + personfirstname[indexinwhichcurrentmaxexists] + " " + personlastname[indexinwhichcurrentmaxexists] + " " + "(" + cur_max + ")");
-		System.out.println("Smallest: " + personfirstname[indexinwhichcurrentminexists] + " " + personlastname[indexinwhichcurrentminexists] + " " + "(" + cur_min + ")");
+		System.out.println("Biggest: " + personfirstname[indexinwhichcurrentmaxexists] + " " + personlastname[indexinwhichcurrentmaxexists] + " " + "(" + String.format("%.02f", cur_max) + ")");
+		System.out.println("Smallest: " + personfirstname[indexinwhichcurrentminexists] + " " + personlastname[indexinwhichcurrentminexists] + " " + "(" + String.format("%.02f", cur_min) + ")");
 		System.out.println("Average: " + String.format("%.02f", average));	
 		
 		scan.close();
