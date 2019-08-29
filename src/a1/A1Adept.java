@@ -89,8 +89,12 @@ public class A1Adept {
 		int indexinwhichcurrentmaxexists = 0;
 		
 		
-		for(int z = 1; z < thearraythateachcustomerspends.length; z++) {
-		//	cur_max = thearraythateachcustomerspends[0];
+		for(int z = 0; z < thearraythateachcustomerspends.length; z++) {
+			
+			if(z == 0) {
+				cur_max = thearraythateachcustomerspends[0];
+			}
+		
 			if(thearraythateachcustomerspends[z] > cur_max) {
 				cur_max = thearraythateachcustomerspends[z];
 				indexinwhichcurrentmaxexists = z;
@@ -102,7 +106,7 @@ public class A1Adept {
 			if(y == 0) {
 				cur_min = thearraythateachcustomerspends[0];
 			}
-		//	cur_min = thearraythateachcustomerspends[0];
+		
 				if (thearraythateachcustomerspends[y] < cur_min) {
 					cur_min = thearraythateachcustomerspends[y];
 					indexinwhichcurrentminexists = y;
