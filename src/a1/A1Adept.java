@@ -30,6 +30,8 @@ public class A1Adept {
 		String[] personlastname = new String[numberofpeople];
 		
 		double[] thearraythateachcustomerspends = new double[numberofpeople];
+		
+		
  		
 		for(int a = 0; a < numberofpeople; a++) {
 			
@@ -60,11 +62,19 @@ public class A1Adept {
 				
 			}
 			
-		 thearraythateachcustomerspends[a] = total;
-			
+			thearraythateachcustomerspends[a] = total;
+		 
+		 
+		 
 			
 			
 		}  
+		
+		for(int e = 0; e < thearraythateachcustomerspends.length; e++) {
+			System.out.println(thearraythateachcustomerspends[e]);
+		}
+		
+		
 		
 		double totalofprices = 0;
 		double average = 0;
@@ -82,7 +92,7 @@ public class A1Adept {
 		
 		
 		for(int z = 1; z < thearraythateachcustomerspends.length; z++) {
-			cur_max = thearraythateachcustomerspends[0];
+		//	cur_max = thearraythateachcustomerspends[0];
 			if(thearraythateachcustomerspends[z] > cur_max) {
 				cur_max = thearraythateachcustomerspends[z];
 				indexinwhichcurrentmaxexists = z;
@@ -90,19 +100,23 @@ public class A1Adept {
 		}
 		
 		for(int y = 0; y < thearraythateachcustomerspends.length; y++) {
-			cur_min = thearraythateachcustomerspends[1];
+			if(y == 0) {
+				cur_min = thearraythateachcustomerspends[0];
+			}
+		//	cur_min = thearraythateachcustomerspends[0];
 				if (thearraythateachcustomerspends[y] < cur_min) {
 					cur_min = thearraythateachcustomerspends[y];
 					indexinwhichcurrentminexists = y;
 					
 				}
+				System.out.println("SMALLES IS CURRENTLY: " + cur_min);
 		}
 		
 		System.out.println("Biggest: " + personfirstname[indexinwhichcurrentmaxexists] + " " + personlastname[indexinwhichcurrentmaxexists] + " " + "(" + String.format("%.02f", cur_max) + ")");
 		System.out.println("Smallest: " + personfirstname[indexinwhichcurrentminexists] + " " + personlastname[indexinwhichcurrentminexists] + " " + "(" + String.format("%.02f", cur_min) + ")");
 		System.out.println("Average: " + String.format("%.02f", average));	
-		
 		scan.close();
+		
 	}
 		
 		
