@@ -9,7 +9,7 @@ public class A1Example {
 		// you know what Eclipse thinks it is using and
 		// so that you can confirm that it is 10.0 or higher.
 		
-		System.out.println("Your Java version: " + System.getProperty("java.version"));
+	//	System.out.println("Your Java version: " + System.getProperty("java.version"));
 		
 		// Set up scanner object to read space-separated values
 		// from console input
@@ -28,12 +28,12 @@ public class A1Example {
 		
 		// Read values into the array
 		
-		for (int i=0; i<values.length; i++) {
+		for (int i=0; i < values.length; i++) {
 			values[i] = scan.nextInt();
 		}
 		
 		// All input parsed, so close scanner
-		scan.close();
+	//	scan.close();
 		
 		// Use helper functions to calculate sum, min, and max
 		
@@ -46,8 +46,9 @@ public class A1Example {
 		System.out.println("Min: " + min);
 		System.out.println("Max: " + max);
 		System.out.println("Average: " + String.format("%.2f", ((double) sum) / ((double) count)));
-		
+		scan.close();
 	}
+	
 	
 	/* calculateValueSum 
 	 * Calculates the sum on an array of integers
