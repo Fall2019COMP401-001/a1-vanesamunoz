@@ -70,9 +70,7 @@ public class A1Adept {
 			
 		}  
 		
-		for(int e = 0; e < thearraythateachcustomerspends.length; e++) {
-			System.out.println(thearraythateachcustomerspends[e]);
-		}
+		
 		
 		
 		
