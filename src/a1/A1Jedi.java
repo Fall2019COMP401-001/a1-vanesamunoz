@@ -8,7 +8,7 @@ public class A1Jedi {
 		
 		Scanner scan = new Scanner(System.in);
 
-		String s = " ";
+		
 		
 		
 		int numberofitems = scan.nextInt();
@@ -75,9 +75,7 @@ public class A1Jedi {
 						quantityofpersons[v] += 1;
 					}
 					
-					if(quantityofitemsbought[v] == 0) {
-						s = "No";
-					}
+					
 				}
 				
 			
@@ -88,7 +86,7 @@ public class A1Jedi {
 		}
 		
 		
-		System.out.println(s + " " + "customers bought " + products[0]);
+		System.out.println(quantityofpersons[0] + " " + "customers bought " + products[0]);
 		System.out.println(quantityofpersons[1] + " " + "customers bought " + quantityofitemsbought[1] + " " + products[1]);
 		System.out.println(quantityofpersons[2] + " " + "customers bought " + quantityofitemsbought[2] + " " + products[2]);
 		System.out.println(quantityofpersons[3] + " " + "customers bought " + quantityofitemsbought[3] + " " + products[3]);

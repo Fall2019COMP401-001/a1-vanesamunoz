@@ -11,6 +11,7 @@ public class A1Novice {
 		// Your code follows here.
 		int numberofpeople = scan.nextInt();
 		
+		
         
         
 		
@@ -21,7 +22,7 @@ public class A1Novice {
 	        double product = 1.0;
 	         
 	       
-	      
+			
 		
 		int numberofitems = scan.nextInt();
 		
@@ -53,15 +54,15 @@ public class A1Novice {
 	        	}
 		}
 	        	
-		String newLine = System.getProperty("line.separator");
 		
+		System.out.println(c + ". " + lastname + ": " + String.format("%.02f", total));
 	   	  
-		System.out.println(newLine + c + ". " + lastname + ": " + total);
+		
 	
 		}
-	
 		
-                    
+        
+		
         scan.close(); 
 
 		
